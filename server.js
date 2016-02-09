@@ -6,4 +6,4 @@ var server = http.createServer(function(req, res) {
     res.end("Seetha started");
 })
 
-server.listen('4000',function(){console.log("server.started")});
+server.listen(process.env.PORT || 5000,function(){console.log("server.started")});
